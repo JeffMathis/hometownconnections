@@ -19,13 +19,14 @@
 }
 
 .show-header h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding-bottom: 8rem;
     color: white;
     height: 70vh;
     background-color: hsla(0, 0%, 0%, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .show-header h2 {
