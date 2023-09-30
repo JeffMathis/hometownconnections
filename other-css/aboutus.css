@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo 2', sans-serif;
+
+    --primary-color: #002D72;
+    --accent-color: #007849;
+    --second-accent: #B20A2C;
+    --third-accent: #FFD700;
+    --neutral-color: #333333;
+}
+
+.aboutus-header {
+    color: var(--second-accent);
+    text-align: center;
+    position: relative;
+}
+
+.aboutus-header h1 {
+    padding-top: 4rem;
+    padding-bottom: 6rem;
+}
+
+.about-us-content-wrapper {
+    margin: 2rem;
+}
+
+.about-us-content-wrapper h3 {
+    color: var(--second-accent);
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.about-us-content-wrapper p {
+    margin-bottom: 1rem;
+}
+
+.about-us-img {
+    width: 100%;
+}
+
+.email-collector {
+    display: none;
+}
+
+
+@media screen and (min-width: 750px) {
+
+    .about-us-content-wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin: 4rem;
+    }
+
+    .about-us-content {
+        width: 60%;
+    }
+
+    .email-collector {
+        display: block;
+        position: sticky;
+    }
+
+}

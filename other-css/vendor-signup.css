@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo 2', sans-serif;
+
+    --primary-color: #002D72;
+    --accent-color: #007849;
+    --second-accent: #B20A2C;
+    --third-accent: #FFD700;
+    --neutral-color: #333333;
+
+    --animation-timing: 200ms ease-in-out;
+}
+
+.sign-up-header {
+    position: relative;
+    padding-bottom: 4rem;
+}
+
+header h1 {
+    text-align: center;
+    background-color: var(--second-accent);
+    padding: 4rem 1rem 3rem 1rem;
+    color: white;
+}
+
+.info {
+    text-align: center;
+    padding: 0 2rem 2rem 2rem;
+}
+
+.content {
+    margin: 1rem;
+    font-size: large;
+}
+
+.content h2 {
+    color: var(--second-accent);
+    text-align: center;
+}
+
+.content p {
+    margin-bottom: 3rem;
+}
+
+form h4 {
+    text-align: center;
+    padding: 1rem;
+    font-size: medium;
+
+}
+
+.show-selection {
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem;
+    text-align: center;
+}
+
+form input {
+    width: 100%;
+    margin: 1rem 0;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+#description {
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 6px;
+}
+
+#description::placeholder {
+    padding: 1rem;
+}
+
+.vendor-submit {
+    border: none;
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    font-weight: bolder;
+    font-size: large;
+    border-radius: 9px;
+    background-color: var(--third-accent);
+    width: max-content;
+    margin-left: 50%;
+    translate: -50%;
+}
+
+.vendor-submit:hover {
+    cursor: pointer;
+    background-color: hsl(51, 100%, 40%);
+}
+
+
+
+@media screen and (min-width: 750px) {
+
+    .signup-wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin: 2rem;
+        align-items: center;
+    }
+
+    .content h2 {
+        color: var(--second-accent);
+        text-align: left;
+    }
+
+    .content p {
+        margin-bottom: 3rem;
+    }
+
+    .vendor-submit {
+        padding: 1rem 7rem;
+    }
+
+    form {
+        background-color: var(--neutral-color);
+        border-radius: 1rem;
+        color: white;
+    }
+
+    form input {
+        background-color: var(--neutral-color);
+    }
+
+    form input::placeholder {
+        color: white;
+    }
+}

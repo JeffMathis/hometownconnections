@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo 2', sans-serif;
+
+    --primary-color: #002D72;
+    --accent-color: #007849;
+    --second-accent: #B20A2C;
+    --third-accent: #FFD700;
+    --neutral-color: #333333;
+    --second-neutral: #C0C0C0;
+}
+
+.show-header {
+    height: 70vh;
+    width: 100%;
+    position: absolute;
+}
+
+.show-header h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 8rem;
+    color: white;
+    height: 70vh;
+    background-color: hsla(0, 0%, 0%, 0.6);
+}
+
+.show-header h2 {
+    position: absolute;
+    bottom: 12rem;
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+    color: white;
+}
+
+#vestil {
+    background-image: url(../images/festival.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#fair {
+    background-image: url(../images/mask.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#craft {
+    background-image: url(../images/jams.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.show-info {
+    background-color: var(--second-neutral);
+    padding: 73vh 2rem 2rem 2rem;
+    text-align: center;
+    color: black;
+}
+
+.show-description {
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.show-description h2 {
+    text-align: center;
+    color: var(--second-accent);
+}
+
+.show-description img {
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.img-split {
+    display: flex;
+    flex-direction: row;
+    width: 45vw;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.ticket-btn {
+    text-align: center;
+    background-color: var(--third-accent);
+    width: max-content;
+    margin: auto;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+}
+
+.ticket-btn a {
+    color: black;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.ticket-btn:hover {
+    cursor: pointer;
+    background-color: hsl(51, 100%, 40%);
+}
+
+@media screen and (min-width: 750px) {
+
+    .show-description {
+        margin-top: 0;
+        padding: 0;
+    }
+
+    .description-wrapper {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin: 1rem 4rem;
+        align-items: center;
+    }
+
+    .description-wrapper img {
+        width: 50%;
+        justify-self: center;
+        margin: 0;
+        padding: 2rem;
+    }
+
+    .description-wrapper p {
+        width: 90%;
+    }
+
+    .description-text-wrapper {
+        margin-left: 2rem;
+    }
+
+    .description-color {
+        background-color: var(--neutral-color);
+        padding: 3rem;
+        margin: 0 !important;
+        color: white;
+    }
+
+    .description-color h2 {
+        color: var(--third-accent);
+    }
+
+    .small-img {
+        width: 30vw !important;
+    }
+
+    .text-switch {
+        order: 2;
+        margin-left: 0;
+        margin-right: 2rem;
+    }
+
+    .img-switch {
+        order: 1;
+    }
+
+    #bottom-content {
+        display: block;
+        width: 60%;
+        margin: 3rem auto;
+        text-align: center;
+        font-size: large;
+    }
+
+    #bottom-img {
+        display: none;
+    }
+}
